@@ -3,6 +3,7 @@
     <head>
         <title>Calculadora Basal</title>
         <link rel="stylesheet" href="style.css" />
+        <script src="script.js" defer></script>
     </head>
     <body>
         <div id="contenedor">
@@ -15,16 +16,23 @@
                     <button class="item" id="calcular">Calcular</button>
                     <p class="item resultado" id="flu">71cc/h</p>
                     <p class="item resultado" id="man">m+m/2 : 105cc/h</p>
+                    <p class="item resultado" id="diario">1704cc</p>
+                    <p id="observacion" style="color: black"></p>
                 </div>
             </div> 
             <div id="detalle">  
                 <div class="contenido">
                     <h1>¿Cómo se calcula?</h1>
-                     <ul>
-                         <li>De 0kg a 10kg, se calcula 100cc por cada kilo.</li>
-                         <li>Se suman 50cc por cada kilo de peso por arriba de 10kg, hasta 20kg</li>
-                         <li>De 20kg para arriba, se suman 20cc por cada kilo adicional</li>
-                     </ul>
+                        <h2> Método Holliday Segar</h2>  
+                             <ul>
+                                 <li>De 0kg a 10kg, se calcula 100cc por cada kg.</li>
+                                 <li>Superando los 10 kg y hasta los 20 kg, se suman 50cc por cada kg de peso adicional.</li>
+                                 <li>A partir de 20kg hasta 30 kg, se suman 20cc por cada kg adicional.</li>
+                            </ul>
+                        <h2> Método Superficie Corporal</h2>
+                            <p> Pasando de 30 kg, se utiliza la siguiente fórmula:</p>
+                            <p> Superficie corporal = ( (peso * 4) + 7) / (peso + 90)</p>
+                            <p> El resultado se multiplica por 1500 o 2000, según criterio del médico. </p>
                 </div>
             </div>
         </div>

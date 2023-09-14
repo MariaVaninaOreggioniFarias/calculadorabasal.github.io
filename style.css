@@ -1,4 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,900&display=swap');
 
+body{
+    background-image:url(./fondoparacalculadora.png);
+    font-family: 'Montserrat', sans-serif, monospace;
+    color: black;
+}
+h1 {
+    color: black;
+}
     #calculadora{
         background: white;
         /* Con estas 3 lineas vamos a hacer que los divs queden lado a lado */
@@ -8,12 +17,13 @@
     }
     
     #detalle{
-        background: #FF416C;
+        font-family: 'sans-serif';
+        background: rgb(252, 242, 228);
         /* Con estas 3 lineas vamos a hacer que los divs queden lado a lado */
         width: 50%;
         height: 100%;
         float: left;
-        color: #f6f5f7;
+        color: black;
     }
     .contenido{
         /* Estas tres lineas van a centrar el contenido verticalmente dentro de cada div */
@@ -33,18 +43,19 @@
     button {
       font-size: 15px;
         font-weight: bold;
-        padding: 12px 45px;
-        border-radius: 30px;
-        background-color: #FF416C;
-        border: 1px solid #FF416C;
+        padding: 10px 45px;
+        border-radius: 50px;
+        background-color:   #0A81D1;;
+        border: 1px solid black;
         color: #FFFFFF;
         text-transform: uppercase;
-        letter-spacing: 1px;
-        transition: transform 20ms ease-in;
+        letter-spacing: 2px;
+        transition: transform 2ms ease-in;
     }
 
     button:active {
-        transform: scale(0.95);
+        transform: scale(0.85);
+        background-color:  #7dc9fc;;
         }
  #contenedor{
             width: 900px;
@@ -72,6 +83,7 @@
             margin-bottom: 5px;
             display: none;
         }      
+       
       
     
   
